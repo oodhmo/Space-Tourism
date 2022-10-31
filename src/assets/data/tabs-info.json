@@ -1,0 +1,22 @@
+[
+  {
+    "tabId": "00",
+    "title": "HOME",
+    "to": "/"
+  },
+  {
+    "tabId": "01",
+    "title": "DESTINATION",
+    "to": "/destination"
+  },
+  {
+    "tabId": "02",
+    "title": "CREW",
+    "to": "/crew"
+  },
+  {
+    "tabId": "03",
+    "title": "TECHNOLOGY",
+    "to": "/technology"
+  }
+]
