@@ -29,7 +29,7 @@
   }
 
   .line {
-    position: absolute;
+    position: fixed;
     width: 32%;
     height: 1px;
     left: 10%;
@@ -37,7 +37,7 @@
   }
 
   .icon {
-    position: absolute;
+    position: fixed;
     width: 48px;
     height: 48px;
     left: 55px;
@@ -69,8 +69,57 @@
   }
 }
 
-#app {
-  .title {
-    font-family: 'Bellefair', serif;
+#home {
+  display: inline-block;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1100px 100px;
+  }
+
+  .home-txt {
+    margin-left: 165px;
+    margin-top: 347px;
+    width: 450px;
+
+    .semi-title {
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 2.5px;
+    }
+
+    .space {
+      font-size: 140px;
+    }
+  }
+
+  .circle {
+    right: 0;
+
+    .circle-btn {
+      background-color: white;
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 0;
+
+      margin-top: 400px;
+
+      .txt {
+        font-size: 32px;
+        text-align: center;
+        line-height: 240px;
+      }
+    }
+
+    .circle-btn:hover {
+      transition: all 0.1s;
+      cursor: pointer;
+      outline: rgba(255, 255, 255, .5) solid 50px;
+      outline-offset: 0px;
+      border: 0;
+      //border: 10px solid rgba(255, 255, 255, 0.5);
+    }
+
   }
 }

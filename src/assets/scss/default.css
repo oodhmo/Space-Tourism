@@ -60,6 +60,46 @@
   margin-right: 8px;
 }
 
-#app .title {
-  font-family: "Bellefair", serif;
+#home {
+  display: inline-block;
+}
+#home .home-txt {
+  margin-left: 165px;
+  margin-top: 347px;
+  width: 450px;
+}
+#home .home-txt .semi-title {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+}
+#home .home-txt .space {
+  font-size: 140px;
+}
+#home .container {
+  display: flex;
+}
+#home .circle-btn {
+  background-color: white;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  margin-top: 405px;
+  margin-left: 500px;
+}
+#home .circle-btn .txt {
+  font-size: 32px;
+  text-align: center;
+  line-height: 240px;
+}
+#home .circle-btn:hover {
+  cursor: pointer;
+}
+#home .big-circle {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-top: 405px;
+  margin-left: 500px;
 }/*# sourceMappingURL=default.css.map */

@@ -24,4 +24,23 @@ a {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+.main {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d9f9;
+}
+
+.title {
+  font-family: "BelleFair", sans-serif;
+  color: white;
+}
+
+.p-txt {
+  font-size: 18px;
+  letter-spacing: 1.5px;
+}
+
+.font-bel {
+  font-family: "BelleFair", sans-serif;
 }/*# sourceMappingURL=commons.css.map */
