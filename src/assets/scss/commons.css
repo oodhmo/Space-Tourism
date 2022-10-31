@@ -3,8 +3,13 @@ a {
   color: white;
 }
 
-a:hover {
-  border-bottom: 3px solid #FFFFFF;
+.bor-b {
+  border-bottom: 3px solid white;
+}
+
+.bor-hov:hover {
+  transition: all 0.1s;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .bck-bl {
