@@ -4,7 +4,7 @@
       <div class="menu">
         <div :class="['items', {'bor-b' : tab.to === this.$route.path, 'bor-hov' : tab.to !== this.$route.path}]" v-for="tab in tabs" :key="tab.tabId">
           <router-link :to="tab.to">
-            <div class="item deco-none" @click="commonsStore.setMenuActive(tab.tabId)">
+            <div class="item" @click="commonsStore.setMenuActive(tab.tabId)">
               <strong class="itemId">{{tab.tabId}}</strong> 
               {{tab.title}}
             </div>

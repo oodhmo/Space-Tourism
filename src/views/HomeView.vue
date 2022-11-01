@@ -3,7 +3,7 @@
     <img src="@/assets/images/bg-earth.jpg" class="bg-earth">
     <div class=container>    
         <div class="home-txt main">
-          <div class="semi-title">SO, YOU WANT TO TRAVEL TO</div>
+          <div class="semi">SO, YOU WANT TO TRAVEL TO</div>
           <div class="title space">SPACE</div>
           <p class="p-txt">Let’s face it; if you want to go to space, 
             you might as well genuinely go to outer space 
