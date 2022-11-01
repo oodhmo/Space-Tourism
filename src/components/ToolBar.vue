@@ -8,8 +8,7 @@
               <strong class="itemId">{{tab.tabId}}</strong> 
               {{tab.title}}
             </div>
-            
-            <!--  -->
+
           </router-link>
         </div>
       </div>
@@ -27,35 +26,13 @@ import { useCommonsStore } from '@/stores/commons'
 
 export default defineComponent({
   setup() {
-    const tabs = require('@/assets/data/tabs-info.json')
+    const tabs = require('@/assets/data/tabs-info.json').TOOLBAR.items
     const commonsStore = useCommonsStore()
 
-    /* const activeMenu = (item) => {
-      commonsStore.setMenuActive()
-    } */
-    //const route = useRoute();
-
-/*     const setMenuActive = () => {
-      let active = commonsStore.menuActive
-
-      tabs.forEach((item) => {
-        if (item.to === route.path) {
-          active = item.tabId
-          commonsStore.setMenuActive(active)
-        }
-      })
-    }
- */
     return {
       tabs,
       commonsStore,
-      //setMenuActive
     }
-  },
-  created() {
-    //this.setMenuActive()
-
-    //console.log(this.commonsStore.menuActive)
   },
 })
 </script>

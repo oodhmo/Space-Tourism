@@ -22,29 +22,12 @@
 </template>
 
 <script>
-// @ is an alias to /src
-//import { ref } from 'vue'
 
 export default {
   name: 'HomeView',
   components: {
   },
   setup() {
-    /* let hover = ref(0)
-
-    const doMouseOver = () => {
-      hover=1;
-      console.log(hover)
-    }
-
-    const doMouseLeave = () => {
-      hover=0;
-      console.log(hover)
-    }
-
-    return {
-      doMouseOver, doMouseLeave, hover
-    } */
   }
 }
 </script>
