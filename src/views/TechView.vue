@@ -1,5 +1,7 @@
 <template>
-  <div class="bck-bl"></div>
+  <div id="tech">
+    <img src="@/assets/images/bg-tech.png" class="bg-default">
+  </div>
 </template>
 
 <script>
