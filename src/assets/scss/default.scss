@@ -180,4 +180,13 @@
   .clicked {
     border-bottom: 2px solid white;
   }
+
+  .default {
+    color: #d0d9f9
+  }
+
+  .tab:hover {
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+    transition: all 0.1s;
+  }
 }

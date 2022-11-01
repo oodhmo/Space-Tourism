@@ -14,7 +14,7 @@
 
         <div class="info">
           <div class="tabs">
-            <div v-for="planet in planets" :key="planet.tabId" :class="['tab', {'clicked': commonsStore.tabActive === planet.tabId, '':commonsStore.tabActive!==planet.tabId}]"> 
+            <div v-for="planet in planets" :key="planet.tabId" :class="['tab', {'clicked': commonsStore.tabActive === planet.tabId, 'default':commonsStore.tabActive!==planet.tabId}]"> 
               <div @click="() => {
                 commonsStore.setMiniTabActive(planet.tabId)
                 setTabActive() }">
