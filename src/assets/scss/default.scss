@@ -79,7 +79,7 @@
 
   .home-txt {
     margin-left: 165px;
-    margin-top: 347px;
+    margin-top: 310px;
     width: 450px;
 
     .semi {
@@ -94,7 +94,6 @@
   }
 
   .circle {
-    right: 0;
 
     .circle-btn {
       background-color: white;
@@ -103,7 +102,7 @@
       border-radius: 50%;
       border: 0;
 
-      margin-top: 400px;
+      margin-top: 350px;
 
       .txt {
         font-size: 32px;
@@ -115,10 +114,9 @@
     .circle-btn:hover {
       transition: all 0.1s;
       cursor: pointer;
-      outline: rgba(255, 255, 255, .5) solid 50px;
+      outline: rgba(255, 255, 255, .5) solid 80px;
       outline-offset: 0px;
       border: 0;
-      //border: 10px solid rgba(255, 255, 255, 0.5);
     }
 
   }

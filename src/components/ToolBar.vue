@@ -8,7 +8,6 @@
               <strong class="itemId">{{tab.tabId}}</strong> 
               {{tab.title}}
             </div>
-
           </router-link>
         </div>
       </div>

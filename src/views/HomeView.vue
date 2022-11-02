@@ -13,11 +13,10 @@
         </div>
         <router-link class="circle" to="/destination">
           <button class="circle-btn">
-            <div class="txt font-bel">EXPLORE</div>
+            <div class="txt bel">EXPLORE</div>
           </button>
         </router-link>
     </div>
-
   </div>
 </template>
 
