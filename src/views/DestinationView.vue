@@ -14,9 +14,9 @@
 
         <div class="info">
           <div class="tabs">
-            <div v-for="planet in planets" :key="planet.tabId" :class="['tab', {'clicked': commonsStore.tabActive === planet.tabId, 'default':commonsStore.tabActive!==planet.tabId}]"> 
+            <div v-for="planet in planets" :key="planet.tabId" :class="['tab', {'clicked': commonsStore.menuActive === planet.tabId, 'default':commonsStore.menuActive!==planet.tabId}]"> 
               <div @click="() => {
-                commonsStore.setMiniTabActive(planet.tabId)
+                commonsStore.setMenuActive(planet.tabId)
                 setTabActive() }">
                 {{ planet.title }}
               </div>
@@ -59,7 +59,7 @@ export default {
 
     const setTabActive = () => {
       planets.forEach((planet)=>{
-        if (commonsStore.tabActive === planet.tabId) {
+        if (commonsStore.menuActive === planet.tabId) {
           planetInfo.section = planet
         }
       })

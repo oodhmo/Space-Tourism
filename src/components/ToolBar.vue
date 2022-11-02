@@ -4,7 +4,7 @@
       <div class="menu">
         <div :class="['items', {'bor-b' : tab.to === this.$route.path, 'bor-hov' : tab.to !== this.$route.path}]" v-for="tab in tabs" :key="tab.tabId">
           <router-link :to="tab.to">
-            <div class="item" @click="commonsStore.setMenuActive(tab.tabId)">
+            <div class="item" @click="commonsStore.resetMenuActive()">
               <strong class="itemId">{{tab.tabId}}</strong> 
               {{tab.title}}
             </div>
@@ -21,8 +21,6 @@
 <script>
 import { defineComponent } from 'vue'
 import { useCommonsStore } from '@/stores/commons'
-//import { useRoute } from 'vue-router'
-
 
 export default defineComponent({
   setup() {
@@ -36,6 +34,3 @@ export default defineComponent({
   },
 })
 </script>
-<style>
-
-</style>

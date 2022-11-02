@@ -15,17 +15,17 @@
         <div class="main p-txt description">{{crewInfo.section.description}}</div>
 
         <div class="page">
-          <div :class="['circle', { 'clicked' : commonsStore.pageActive === '0' }]" @click="() => {
-            commonsStore.setPageActive('0')
+          <div :class="['circle', { 'clicked' : commonsStore.menuActive === '0' }]" @click="() => {
+            commonsStore.setMenuActive('0')
             setPageActive() }"/>
-          <div :class="['circle', { 'clicked' : commonsStore.pageActive === '1' }]" @click="() => {
-            commonsStore.setPageActive('1')
+          <div :class="['circle', { 'clicked' : commonsStore.menuActive === '1' }]" @click="() => {
+            commonsStore.setMenuActive('1')
             setPageActive() }" />
-          <div :class="['circle', { 'clicked' : commonsStore.pageActive === '2' }]" @click="() => {
-            commonsStore.setPageActive('2')
+          <div :class="['circle', { 'clicked' : commonsStore.menuActive === '2' }]" @click="() => {
+            commonsStore.setMenuActive('2')
             setPageActive() }" />
-          <div :class="['circle', { 'clicked' : commonsStore.pageActive === '3' }]" @click="() => {
-            commonsStore.setPageActive('3')
+          <div :class="['circle', { 'clicked' : commonsStore.menuActive === '3' }]" @click="() => {
+            commonsStore.setMenuActive('3')
             setPageActive() }" />
         </div>
 
@@ -50,7 +50,7 @@ export default {
 
     const setPageActive = () => {
       crew.forEach((mate)=>{
-        if (commonsStore.pageActive === mate.id) {
+        if (commonsStore.menuActive === mate.id) {
           crewInfo.section = mate
         }
       })

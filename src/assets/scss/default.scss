@@ -205,7 +205,7 @@
 
     img {
       position: absolute;
-      height: 582px;
+      height: 576px;
       right: 10%;
       top: 160px;
 
@@ -215,7 +215,7 @@
     .crewmates {
       margin-left: 16%;
       display: grid;
-      grid-template-rows: 50px 100px 200px 80px;
+      grid-template-rows: 50px 100px 200px 50px;
 
       z-index: 1;
     }
