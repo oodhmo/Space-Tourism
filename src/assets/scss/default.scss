@@ -19,25 +19,25 @@
   font-family: 'Barlow', sans-serif;
 
   .bar {
-    width: 60%;
+    width: 930px;
     height: 96px;
     margin-top: 40px;
     backdrop-filter: blur(8px);
     background-color: rgba(255, 255, 255, 0.07);
-    position: fixed;
+    position: absolute;
     right: 0;
   }
 
   .line {
-    position: fixed;
-    width: 32%;
+    position: absolute;
+    width: 32vw;
     height: 1px;
     left: 10%;
     top: 88px;
   }
 
   .icon {
-    position: fixed;
+    position: absolute;
     width: 48px;
     height: 48px;
     left: 55px;
@@ -129,7 +129,8 @@
   .planets {
     display: grid;
     margin-top: 250px;
-    grid-template-columns: 900px 480px;
+    grid-template-columns: 3fr 1.5fr 0.5fr;
+    //grid-template-columns: 900px 480px;
     position: relative;
 
     .img {
@@ -152,7 +153,7 @@
 
   .info {
     display: grid;
-    grid-template-rows: 80px 280px;
+    grid-template-rows: 1fr 3.2fr;
 
     .title {
       font-size: 100px;
@@ -198,7 +199,7 @@
 
   .info {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 4fr 3fr;
     margin-top: 300px;
 
     img {
@@ -213,7 +214,7 @@
     .crewmates {
       margin-left: 16%;
       display: grid;
-      grid-template-rows: 50px 100px 200px 50px;
+      grid-template-rows: 0.7fr 1fr 2fr 0.7fr;
 
       z-index: 1;
     }

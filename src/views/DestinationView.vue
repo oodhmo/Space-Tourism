@@ -22,10 +22,13 @@
               </div>
             </div>
           </div>
-            <!-- planet description -->
+          <!-- planet description -->
+            
           <div class="description">
             <div class="title">{{ planetInfo.section.title }}</div>
-            <div class="main p-txt">{{ planetInfo.section.description }}</div>
+            <div class="planet-description">
+              <div class="main p-txt des">{{ planetInfo.section.description }}</div>
+            </div>
           </div>
 
           <div class="travel">
