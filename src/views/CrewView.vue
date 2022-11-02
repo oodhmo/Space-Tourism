@@ -11,7 +11,7 @@
       <div class="crewmates">
 
         <div class="type">{{crewInfo.section.type}}</div>
-        <div class="title">{{crewInfo.section.name}}</div>
+        <div class="big title">{{crewInfo.section.name}}</div>
         <div class="main p-txt description">{{crewInfo.section.description}}</div>
 
         <div class="page">

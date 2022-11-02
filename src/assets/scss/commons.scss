@@ -22,6 +22,10 @@ a {
   color: white;
 }
 
+.big {
+  font-size: 70px;
+}
+
 .p-txt {
   font-size: 18px;
   line-height: 30px;
@@ -74,4 +78,21 @@ a {
     color: rgba(255, 255, 255, .5);
     margin-right: 10px;
   }
+}
+
+//margin
+.mt90 {
+  margin-top: 90px;
+}
+
+// spacing
+.space {
+  letter-spacing: 1.5px;
+}
+
+
+//font
+
+.barCon {
+  font-family: 'Barlow Condensed', sans-serif;
 }
