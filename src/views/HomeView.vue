@@ -5,7 +5,7 @@
         <div class="home-txt main">
           <div class="semi">SO, YOU WANT TO TRAVEL TO</div>
           <div class="title space">SPACE</div>
-          <p class="p-txt">Let’s face it; if you want to go to space, 
+          <p class="p-txt des">Let’s face it; if you want to go to space, 
             you might as well genuinely go to outer space 
             and not hover kind of on the edge of it. 
             Well sit back, and relax because we’ll give you 
