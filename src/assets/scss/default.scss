@@ -23,6 +23,10 @@
   #toolbar {
     font-family: 'Barlow', sans-serif;
 
+    .btn {
+      display: none;
+    }
+
     .bar {
       width: 930px;
       height: 96px;
@@ -484,6 +488,9 @@
   }
 }
 
+
+//mobile
+
 @media all and (max-width: 767px) {
   .bg-earth {
     //transform: rotate(90deg);
@@ -513,48 +520,91 @@
   #toolbar {
     font-family: 'Barlow', sans-serif;
 
+    nav {
+      position: relative;
+      transform: translateX(350px);
+      transition: all .6s;
+    }
+
+    //open sidebar
+    .open {
+      transform: translateX(0px);
+    }
+
+    .bar {
+      z-index: 0;
+
+      width: 350px;
+      height: 100vh;
+
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.07);
+
+      position: absolute;
+      right: 0;
+    }
+
     .line {
       display: none;
     }
 
-    .bar {
+    .btn {
       position: absolute;
-      width: 70vw;
-      height: 96px;
-      right: 0;
-      top: 0;
+      margin-top: 30px;
+      cursor: pointer;
 
-      backdrop-filter: blur(8px);
-      background-color: rgba(255, 255, 255, 0.07);
+      .menu-btn {
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: auto;
+      }
+
+      z-index: 1;
     }
 
+
+
     .icon {
-      position: absolute;
-      width: 48px;
-      height: 48px;
+      position: fixed;
+      width: 60px;
+      height: 60px;
       left: 40px;
       top: 20px;
     }
 
     .menu {
       font-family: 'Barlow Condensed', sans-serif;
-      display: flex;
+      //display: flex;
       cursor: pointer;
 
-      margin-top: 38px;
+      margin-top: 100px;
+
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
 
       .items {
         margin-left: 54px;
-        height: 56px;
+      }
+
+      .bor-b {
+        border-bottom: 0px;
+        border-right: 3px solid white;
+      }
+
+      .bor-hov:hover {
+        border-bottom: 0px;
+        border-right: 3px solid rgba(255, 255, 255, 0.5);
       }
 
       .item {
         display: flex;
         letter-spacing: 2.5px;
+        margin-top: 20px;
       }
 
       .itemId {
-        display: flex;
+        margin-right: 10px;
       }
     }
   }
