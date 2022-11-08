@@ -2,7 +2,7 @@
   <div id="tech">
     <img src="@/assets/images/bg-tech.png" class="bg-default">
     
-    <div class="semi-title">
+    <div class="semi-title semi-mg">
       <strong class="count">03</strong>
       SPACE LAUNCH 101
     </div>

@@ -2,7 +2,7 @@
   <div id="crew">
     <img src="@/assets/images/bg-crew.png" class="bg-default">
 
-    <div class="semi-title">
+    <div class="semi-title semi-mg">
       <strong class="count">02</strong>
       MEET YOUR CREW
     </div>

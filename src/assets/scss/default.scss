@@ -3,6 +3,13 @@
 //desktop
 
 @media all and (min-width: 1024px) {
+
+  .semi-mg {
+    margin-left: 166.5px;
+    margin-top: 170px;
+    font-size: 30px;
+  }
+
   .bg-earth {
     /* Set rules to fill background */
     min-height: 100%;
@@ -23,7 +30,7 @@
   #toolbar {
     font-family: 'Barlow', sans-serif;
 
-    .btn {
+    .hamb {
       display: none;
     }
 
@@ -238,9 +245,7 @@
           width: 15px;
           height: 15px;
           border-radius: 50%;
-
-          margin-right: 5%;
-
+          margin: 5%;
           cursor: pointer;
         }
 
@@ -352,9 +357,18 @@
   }
 }
 
-//tab
+
+
+/*----------------------------------------------------------
+             
+tab
+
+------------------------------------------------------------ */
+
+
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
+
   .bg-earth {
     //transform: rotate(90deg);
     /* Set rules to fill background */
@@ -362,9 +376,6 @@
     min-width: 100px;
 
     /* Set up proportionate scaling */
-    /*     width: 100%;
-    height: 100vh; */
-
     bottom: 0;
     right: 0;
     top: 0;
@@ -384,6 +395,10 @@
     font-family: 'Barlow', sans-serif;
 
     .line {
+      display: none;
+    }
+
+    .hamb {
       display: none;
     }
 
@@ -486,6 +501,138 @@
 
     }
   }
+
+  #destination {
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+
+    .planets {
+      margin-top: 170px;
+    }
+
+    img {
+      width: 230px;
+    }
+
+    .info {
+      margin-top: 20px;
+      display: grid;
+      grid-template-rows: 1.2fr 4fr 2fr;
+
+      .tabs {
+        color: white;
+
+        letter-spacing: 2.5px;
+        display: flex;
+        justify-content: center;
+
+        .tab {
+          margin: 2%;
+          height: 30px;
+          cursor: pointer;
+        }
+
+        .clicked {
+          border-bottom: 2px solid white;
+        }
+
+        .default {
+          color: #d0d9f9
+        }
+
+        .tab:hover {
+          border-bottom: 2px solid rgba(255, 255, 255, .5);
+          transition: all 0.1s;
+        }
+      }
+
+      .title {
+        font-size: 70px;
+      }
+
+      .description {
+        margin-left: 100px;
+        margin-right: 100px;
+        border-bottom: .5px solid rgba(255, 255, 255, .3);
+
+        .des {
+          font-size: 16px;
+        }
+      }
+
+      .travel {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        text-align: center;
+
+        .avg {
+          margin-left: 130px
+        }
+
+        .time {
+          margin-right: 130px
+        }
+
+        .numer {
+          margin-top: 10px;
+          font-family: 'BelleFair', sans-serif;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  #crew {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+    display: inline-block;
+
+    .crewmates {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr 2fr 4fr 1fr;
+    }
+
+    .info {
+      margin-top: 180px;
+      text-align: center;
+
+      img {
+        height: 506px;
+        right: 10%;
+        top: 160px;
+
+        z-index: 0;
+      }
+
+      .type {
+        font-family: 'BelleFair', sans-serif;
+        font-size: 24px;
+        color: rgba(255, 255, 255, .5)
+      }
+
+      .page {
+        justify-content: center;
+      }
+
+      .big {
+        font-size: 41px;
+      }
+
+      .description {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+
+      .p-txt {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 
@@ -499,9 +646,6 @@
     min-width: 100px;
 
     /* Set up proportionate scaling */
-    /*     width: 100%;
-    height: 100vh; */
-
     width: 1000px;
     height: 1000px;
 
@@ -662,5 +806,13 @@
         border: 0;
       }
     }
+  }
+
+  #destination {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    text-align: center;
+
+
   }
 }

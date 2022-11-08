@@ -2,7 +2,7 @@
   <div id="destination" class="bck-bl">
     <div class="container">
       <img src="@/assets/images/bg-default.jpg" class="bg-default">
-      <div class="semi-title">
+      <div class="semi-title semi-mg">
         <strong class="count">01</strong>
         PICK YOUR DESTINATION
       </div>
