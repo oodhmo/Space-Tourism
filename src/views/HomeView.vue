@@ -21,12 +21,16 @@
 </template>
 
 <script>
-
+import { useCommonsStore } from '@/stores/commons'
 export default {
   name: 'HomeView',
-  components: {
-  },
   setup() {
+    const commonsStore = useCommonsStore()
+
+    return { commonsStore }
+  },
+  created(){
+    this.commonsStore.resetClicked()
   }
 }
 </script>

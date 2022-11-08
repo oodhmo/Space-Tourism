@@ -54,6 +54,7 @@ export default {
 
   created() {
     this.setPageTabActive()
+    this.commonsStore.resetClicked()
   }
 }
 </script>

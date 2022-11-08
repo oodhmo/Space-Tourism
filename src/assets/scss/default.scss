@@ -519,6 +519,7 @@
 
   #toolbar {
     font-family: 'Barlow', sans-serif;
+    font-size: 20px;
 
     nav {
       position: relative;
@@ -548,9 +549,10 @@
       display: none;
     }
 
-    .btn {
+    .hamb {
       position: absolute;
-      margin-top: 30px;
+      top: 33px;
+      right: 50px;
       cursor: pointer;
 
       .menu-btn {
@@ -563,8 +565,6 @@
       z-index: 1;
     }
 
-
-
     .icon {
       position: fixed;
       width: 60px;
@@ -575,16 +575,18 @@
 
     .menu {
       font-family: 'Barlow Condensed', sans-serif;
+
       //display: flex;
       cursor: pointer;
 
-      margin-top: 100px;
+      margin-top: 140px;
 
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr 4fr;
 
       .items {
         margin-left: 54px;
+        margin-bottom: 30px;
       }
 
       .bor-b {

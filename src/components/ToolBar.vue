@@ -1,10 +1,10 @@
 <template>
   <div id="toolbar">
-    <div class="btn">
-        <img v-if="!isClicked" src="@/assets/images/menu.png" class="menu-btn" @click="setClicked">
-        <img v-if="isClicked" src="@/assets/images/menu_x.png" class="menu-btn" @click="resetClicked">
+    <div class="hamb">
+      <img v-if="!commonsStore.isClicked" src="@/assets/images/menu.png" class="menu-btn" @click="commonsStore.setClicked()">
+      <img v-if="commonsStore.isClicked" src="@/assets/images/menu_x.png" class="menu-btn" @click="commonsStore.resetClicked()">
     </div>
-    <nav :class="['', {'open': isClicked}]">
+    <nav :class="['', {'open': commonsStore.isClicked}]">
       <div class="bar">  
         <div class="menu">
           <div :class="['items', {'bor-b' : tab.to === this.$route.path, 'bor-hov' : tab.to !== this.$route.path}]" v-for="tab in tabs" :key="tab.tabId">
@@ -18,13 +18,16 @@
         </div>
       </div>
     </nav>
-    <img src="@/assets/images/bar-line.png" class="line">
+    <div class="icons">
+      <img src="@/assets/images/bar-line.png" class="line">
       <img src="@/assets/images/bar-icon.png" class="icon">
+    </div>
+    
   </div>
 </template>
 
 <script>
-import { defineComponent, ref } from 'vue'
+import { defineComponent } from 'vue'
 import { useCommonsStore } from '@/stores/commons'
 
 export default defineComponent({
@@ -32,23 +35,14 @@ export default defineComponent({
     const tabs = require('@/assets/data/tabs-info.json').TOOLBAR.items
     const commonsStore = useCommonsStore()
 
-    let isClicked = ref(false)
-
-    const setClicked = () => {
-      isClicked.value = true
-    }
-
-    const resetClicked = () => {
-      isClicked.value = false
-    }
-
     return {
       tabs,
       commonsStore,
-      isClicked, 
-      setClicked,
-      resetClicked
     }
   },
+
+  created() {
+    this.commonsStore.resetClicked()
+  }
 })
 </script>

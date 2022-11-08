@@ -61,6 +61,7 @@ export default {
 
   created() {
     this.setPageActive()
+    this.commonsStore.resetClicked()
   }
 
 }

@@ -73,9 +73,7 @@ export default {
   },
   created() {
     this.setTabActive()
+    this.commonsStore.resetClicked()
   }
 }
 </script>
-<style>
-
-</style>
