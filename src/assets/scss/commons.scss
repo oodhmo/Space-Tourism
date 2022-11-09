@@ -99,6 +99,22 @@ a {
   }
 }
 
+.pageinfo {
+  .pageTab:hover {
+    transition: all 0.2s;
+    background-color: white;
+    color: black;
+
+    cursor: pointer;
+  }
+
+  .clicked {
+    background-color: white;
+    color: black;
+  }
+}
+
+
 //margin
 .mt90 {
   margin-top: 90px;
@@ -132,14 +148,16 @@ a {
   }
 }
 
+//tab
 @media all and (min-width: 768px) and (max-width: 1023px) {
   .semi-mg {
-    font-size: 23px;
+    font-size: 20px;
     margin-left: 50px;
     top: 120px;
   }
 }
 
+//mobile
 @media all and (max-width: 767px) {
 
   .semi-mg {

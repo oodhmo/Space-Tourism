@@ -24,7 +24,9 @@
           <div class="main p-txt">{{launchInfo.data.description}}</div>
         </div>
       </div>
-      <img :src="require(`@/assets/images/${launchInfo.data.imgUrl}`)" class="">
+      <div class="img-con">
+        <img :src="require(`@/assets/images/${launchInfo.data.imgUrl}`)" class="">
+      </div>
       </div>     
     </div>
 </template>

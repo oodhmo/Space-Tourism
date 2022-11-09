@@ -245,7 +245,7 @@
           width: 15px;
           height: 15px;
           border-radius: 50%;
-          margin: 5%;
+          //margin: 5%;
           cursor: pointer;
         }
 
@@ -273,6 +273,10 @@
       display: grid;
       grid-template-columns: 1.3fr 3fr 2fr;
       margin-top: 240px;
+
+      .content {
+        display: inline-block;
+      }
 
       img {
         width: 490px;
@@ -594,7 +598,7 @@ tab
     .crewmates {
       margin: 0;
       display: grid;
-      grid-template-rows: 1fr 2fr 4fr 1fr;
+      grid-template-rows: 1fr 2fr 5fr 1fr;
     }
 
     .info {
@@ -602,7 +606,7 @@ tab
       text-align: center;
 
       img {
-        height: 506px;
+        height: 440px;
         right: 10%;
         top: 160px;
 
@@ -632,6 +636,86 @@ tab
         font-size: 16px;
       }
     }
+  }
+
+
+  #tech {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+    //position: relative;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: 180px;
+
+      .pageinfo {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+
+        margin-top: 30px;
+
+        .pageTab {
+          font-family: 'BelleFair', sans-serif;
+
+          border: 2px solid rgba(255, 255, 255, .3);
+          border-radius: 50%;
+          padding: 1%;
+          padding-left: 2%;
+          padding-right: 2%;
+
+          margin: 7px;
+
+          text-align: center;
+        }
+      }
+
+      .content {
+        order: 3;
+
+        margin-top: 30px;
+
+        text-align: center;
+        display: grid;
+        grid-template-rows: 30px 70px 150px;
+
+        .big {
+          font-size: 50px;
+        }
+
+        .description {
+          margin-left: 90px;
+          margin-right: 90px;
+        }
+
+        .p-txt {
+          font-size: 16px;
+        }
+      }
+
+      .img-con {
+        order: 1;
+
+        position: relative;
+        height: 320px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          margin-top: -380px;
+        }
+      }
+    }
+
+
+
   }
 }
 
