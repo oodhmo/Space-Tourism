@@ -526,7 +526,7 @@ tab
 
       .tabs {
         color: white;
-
+        font-size: 14px;
         letter-spacing: 2.5px;
         display: flex;
         justify-content: center;
@@ -552,16 +552,16 @@ tab
       }
 
       .title {
-        font-size: 70px;
+        font-size: 60px;
       }
 
       .description {
-        margin-left: 100px;
-        margin-right: 100px;
+        margin-left: 90px;
+        margin-right: 90px;
         border-bottom: .5px solid rgba(255, 255, 255, .3);
 
         .des {
-          font-size: 16px;
+          font-size: 14px;
         }
       }
 
@@ -583,7 +583,7 @@ tab
         .numer {
           margin-top: 10px;
           font-family: 'BelleFair', sans-serif;
-          font-size: 25px;
+          font-size: 20px;
         }
       }
     }
@@ -598,7 +598,7 @@ tab
     .crewmates {
       margin: 0;
       display: grid;
-      grid-template-rows: 1fr 2fr 5fr 1fr;
+      grid-template-rows: 1fr 2fr 4fr 1fr;
     }
 
     .info {
@@ -633,7 +633,7 @@ tab
       }
 
       .p-txt {
-        font-size: 16px;
+        font-size: 15px;
       }
     }
   }
@@ -681,10 +681,10 @@ tab
 
         text-align: center;
         display: grid;
-        grid-template-rows: 30px 70px 150px;
+        grid-template-rows: 30px 50px 150px;
 
         .big {
-          font-size: 50px;
+          font-size: 40px;
         }
 
         .description {
@@ -693,7 +693,7 @@ tab
         }
 
         .p-txt {
-          font-size: 16px;
+          font-size: 15px;
         }
       }
 
@@ -713,9 +713,6 @@ tab
         }
       }
     }
-
-
-
   }
 }
 
@@ -750,6 +747,7 @@ tab
     font-size: 20px;
 
     nav {
+      //z-index: 0;
       position: relative;
       transform: translateX(350px);
       transition: all .6s;
@@ -761,8 +759,6 @@ tab
     }
 
     .bar {
-      z-index: 0;
-
       width: 350px;
       height: 100vh;
 
@@ -778,6 +774,8 @@ tab
     }
 
     .hamb {
+      //z-index: 1;
+
       position: absolute;
       top: 33px;
       right: 50px;
@@ -896,7 +894,125 @@ tab
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
     text-align: center;
+    display: inline-block;
 
+
+    .planets {
+      margin-top: 170px;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .info {
+
+      .tabs {
+        letter-spacing: 2.5px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .tab {
+        margin: 4%;
+        height: 25px;
+        cursor: pointer;
+      }
+
+      .tab:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, .5);
+        transition: all 0.1s;
+      }
+
+      .clicked {
+        border-bottom: 2px solid white;
+      }
+
+      .default {
+        color: #d0d9f9
+      }
+
+      .title {
+        font-size: 80px;
+      }
+
+      .description {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 30px;
+        border-bottom: .5px solid rgba(255, 255, 255, .3);
+      }
+
+      .travel {
+        margin: 40px;
+      }
+
+      .avg {
+        margin-bottom: 30px;
+      }
+
+      .sm-title {
+        font-size: 15px;
+        letter-spacing: 2px;
+      }
+
+      .numer {
+        margin-top: 10px;
+        font-family: 'BelleFair', sans-serif;
+        font-size: 40px;
+      }
+    }
+  }
+
+  #crew {
+    font-family: 'Barlow', sans-serif;
+    color: white;
+
+    display: inline-block;
+
+    text-align: center;
+
+    .info {
+      margin-top: 180px;
+
+      .pic {
+        order: 1;
+      }
+
+      .crewmates {
+        margin: 0;
+        order: 2;
+        /* display: grid;
+        grid-template-rows: 1fr 2fr 4fr 1fr; */
+      }
+
+      img {
+        order: 1;
+        height: 440px;
+        right: 10%;
+        top: 160px;
+
+        z-index: 0;
+      }
+
+      .page {
+        justify-content: center;
+        order: 1;
+      }
+
+      .type {
+        order: 2;
+      }
+
+      .title {
+        order: 3;
+      }
+
+      .description {
+        order: 4;
+      }
+
+    }
 
   }
 }

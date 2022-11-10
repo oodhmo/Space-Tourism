@@ -2,9 +2,11 @@
   <div id="destination" class="bck-bl">
     <div class="container">
       <img src="@/assets/images/bg-default.jpg" class="bg-default">
-      <div class="semi-title semi-mg">
-        <strong class="count">01</strong>
-        PICK YOUR DESTINATION
+      <div class="top">
+        <div class="semi-title semi-mg">
+          <strong class="count">01</strong>
+          PICK YOUR DESTINATION
+        </div>
       </div>
       <div class="planets">
         <!-- planet imgs -->
@@ -32,11 +34,11 @@
           </div>
 
           <div class="travel">
-            <div class="avg">
+            <div class="avg semi-info">
               <div class="sm-title">AVG. DISTANCE</div>
               <div class="numer">{{planetInfo.section.distance}}</div>
             </div>
-            <div class="time">
+            <div class="time semi-info">
               <div class="sm-title">EST. TRAVEL TIME</div>
               <div class="numer">{{planetInfo.section.time}}</div>
             </div>

@@ -160,7 +160,17 @@ a {
 //mobile
 @media all and (max-width: 767px) {
 
-  .semi-mg {
-    text-align: center;
+  .top {
+    display: flex;
+    justify-content: center;
+
+    .semi-title {
+      letter-spacing: 3.5px;
+      font-size: 20px;
+    }
+
+    .semi-mg {
+      margin-top: 20%;
+    }
   }
 }

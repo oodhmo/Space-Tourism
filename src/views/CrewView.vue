@@ -1,11 +1,13 @@
 <template>
   <div id="crew">
     <img src="@/assets/images/bg-crew.png" class="bg-default">
-
-    <div class="semi-title semi-mg">
+    <div class="top">
+      <div class="semi-title semi-mg">
       <strong class="count">02</strong>
       MEET YOUR CREW
+      </div> 
     </div>
+    
 
     <div class="info">
       <div class="crewmates">

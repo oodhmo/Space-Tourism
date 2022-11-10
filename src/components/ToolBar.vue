@@ -4,6 +4,7 @@
       <img v-if="!commonsStore.isClicked" src="@/assets/images/menu.png" class="menu-btn" @click="commonsStore.setClicked()">
       <img v-if="commonsStore.isClicked" src="@/assets/images/menu_x.png" class="menu-btn" @click="commonsStore.resetClicked()">
     </div>
+    
     <nav :class="['', {'open': commonsStore.isClicked}]">
       <div class="bar">  
         <div class="menu">
