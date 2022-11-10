@@ -1,10 +1,11 @@
 <template>
   <div id="tech">
     <img src="@/assets/images/bg-tech.png" class="bg-default">
-    
-    <div class="semi-title semi-mg">
-      <strong class="count">03</strong>
-      SPACE LAUNCH 101
+    <div class="top">
+      <div class="semi-title semi-mg">
+        <strong class="count">03</strong>
+        SPACE LAUNCH 101
+      </div>
     </div>
     <div class="container">
       <div class="pageinfo mt90">

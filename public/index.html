@@ -17,18 +17,26 @@
   </title>
 </head>
 <style>
+  html,
+  body {
+    height: 100vh;
+  }
+
   body {
     margin: 0;
 
     overflow-x: hidden;
   }
 
-  .navbar {
-    z-index: 1;
+  #navbar {
+    z-index:1;
+    position:relative;
+
   }
 
   #home #destination #crew #tech {
-    z-index: -1;
+    z-index: 0;
+    height: 100vh;
   }
 </style>
 

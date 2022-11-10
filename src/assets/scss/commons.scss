@@ -83,8 +83,8 @@ a {
     height: 15px;
     border-radius: 50%;
 
-    margin-right: 5%;
-
+    margin-right: 2%;
+    margin-left: 2%;
     cursor: pointer;
   }
 
@@ -171,6 +171,17 @@ a {
 
     .semi-mg {
       margin-top: 20%;
+    }
+
+    .circle {
+      background-color: rgba(255, 255, 255, .2);
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+
+      margin-right: 5%;
+
+      cursor: pointer;
     }
   }
 }
