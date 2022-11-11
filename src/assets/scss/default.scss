@@ -341,7 +341,20 @@
   }
 }
 
+@media all and (max-width: 1290px) {
+  #toolbar {
+    .line{
+      width: 30%
+    }
+  }
+}
+
 @media all and (max-width: 1280px) {
+  #toolbar {
+    .line{
+      width: 25%
+    }
+  }
   #crew {
     .crewmates {
       margin-left: 16%;
@@ -361,6 +374,14 @@
   }
 }
 
+@media all and (max-width: 1187px) {
+
+  #toolbar {
+    .line{
+      width: 20%
+    }
+  }
+}
 
 
 /*----------------------------------------------------------
