@@ -14,9 +14,15 @@ Still in development :exclamation: :exclamation:
 
 - Developed part
 
-  - screen
+  - Desktop screen
 
   <img src="./src/assets/images/desktop-home.png" width="700">
   <img src="./src/assets/images/desktop-destination.png" width="700">
   <img src="./src/assets/images/desktop-crew.png" width="700">
   <img src="./src/assets/images/desktop-tech.png" width="700">
+
+  - Tap screen
+  <img src="./src/assets/images/tap-screens.png">
+
+  - Mobile screen
+  <img src="./src/assets/images/mobile-screens.png">
