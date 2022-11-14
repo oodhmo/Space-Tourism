@@ -1,24 +1,7 @@
 # space-tourism
 
-## Project setup
-```
-npm install
-```
+#JS #html5 #SCSS #Vue3.x (#Pinia)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+github page: https://hoijoii.github.io/Space-Tourism/
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Still in development
