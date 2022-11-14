@@ -16,7 +16,7 @@ Still in development :exclamation: :exclamation:
 
   - screen
 
-  <img src="./src/assets/images/desktop-home.png" width="400">
-  <img src="./src/assets/images/desktop-destination.png" width="400">
-  <img src="./src/assets/images/desktop-crew.png" width="400">
-  <img src="./src/assets/images/desktop-tech.png" width="400">
+  <img src="./src/assets/images/desktop-home.png" width="700">
+  <img src="./src/assets/images/desktop-destination.png" width="700">
+  <img src="./src/assets/images/desktop-crew.png" width="700">
+  <img src="./src/assets/images/desktop-tech.png" width="700">
