@@ -1,12 +1,14 @@
 # space-tourism
 
-#JS #html5 #SCSS #Vue3.x (#Pinia)
+- Javascript
+- Vue3
+- SCSS
 
 #### Front-end Mentor
 https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/space-tourism-multipage-website-mBuEPjbBpg
 
 #### github page
-https://hoijoii.github.io/Space-Tourism/
+https://oodhmo.github.io/Space-Tourism/
 
 <br><br>
 
